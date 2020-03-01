@@ -6,15 +6,41 @@
 	to {opacity: 1;}
 }
 
+:root {
+	height: 100%;
+}
+
 body {
+	position: relative;
 	margin: 0 auto;
 	width: 700px;
-	padding: 0 0;
+	min-height: 100%;
+	padding: 0 0 90px 0;
 	text-align: center;
 	background-color: #9070b0;
 	color: white;
 	font-family: "Book Antiqua";
 	animation: fadein 1s ease-in-out;
+}
+
+footer {
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	border-top: 2px solid white;
+	font-size: 15px;
+	padding: 5px;
+}
+
+p {
+	padding: 0 10px;
+	text-align: justify;
+	font-size: 17px;
+}
+
+span.c {
+	text-align: center;
 }
 
 hr {
@@ -44,13 +70,35 @@ hr {
 }
 
 body > h1 {
-	margin: 60px 0 10px 0;
+	margin: 0 0 10px 0;
+	padding-top: 60px;
 	font-size: 60px;
 }
 
 body > h2 {
 	margin: 10px 0 0 0;
 	font-size: 30px;
+}
+
+body > h3 {
+	margin: 60px 0 0 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+body > h2 > a {
+	display: block;
+	margin: 0 auto;
+	width: 30%;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	border-left: 0px solid white;
+	transition: border 0.1s ease-in-out;
+}
+
+body > h2 > a:hover {
+	border-left: 10px solid white;
 }
 
 nav {
